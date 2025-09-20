@@ -2,6 +2,8 @@ import type { Response } from "express";
 import Blog from "../models/Blog.js";
 import type { AuthRequest } from "../middleware/auth.js";
 
+//CRUD :))
+
 export async function createBlog(req: AuthRequest, res: Response) {
   try {
     const { title, content } = req.body as { title: string; content: string };

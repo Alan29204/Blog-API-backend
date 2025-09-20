@@ -18,6 +18,7 @@ const storage = multer.diskStorage({
   },
 });
 
+// make sure it is image before gets saved
 function imageFileFilter(
   _req: any,
   file: Express.Multer.File,
